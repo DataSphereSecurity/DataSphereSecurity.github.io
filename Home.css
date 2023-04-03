@@ -23,7 +23,8 @@
 
 .u-section-1 .u-image-1 {
   min-height: 400px;
-  background-image: url("https://assets.nicepagecdn.com/e346ef20/4513597/images/MOSHED-2023-4-1-23-50-48.jpg");
+  background-image: url("https://assets.nicepagecdn.com/e346ef20/4513597/images/H1.png");
+  background-position: 50% 50%;
 }
 
 .u-section-1 .u-container-layout-1 {
@@ -32,7 +33,8 @@
 
 .u-section-1 .u-image-2 {
   min-height: 400px;
-  background-image: url("https://assets.nicepagecdn.com/e346ef20/4513597/images/MOSHED-2023-4-1-23-51-35.jpg");
+  background-image: url("https://assets.nicepagecdn.com/e346ef20/4513597/images/H3.png");
+  background-position: 50% 50%;
 }
 
 .u-section-1 .u-container-layout-2 {
@@ -41,7 +43,8 @@
 
 .u-section-1 .u-image-3 {
   min-height: 400px;
-  background-image: url("https://assets.nicepagecdn.com/e346ef20/4513597/images/Headshot.JPG");
+  background-image: url("https://assets.nicepagecdn.com/e346ef20/4513597/images/H2.png");
+  background-position: 50% 50%;
 }
 
 .u-section-1 .u-container-layout-3 {
@@ -258,8 +261,11 @@
 }
 
 .u-section-2 .u-list-1 {
-  width: 1140px;
   margin: 3px auto;
+}
+
+.u-section-2 .u-repeater-1 {
+  grid-gap: 0px;
 }
 
 @media (max-width: 1199px) {
@@ -269,7 +275,6 @@
 
   .u-section-2 .u-layout-wrap-1 {
     position: relative;
-    min-height: 357px;
     width: 940px;
     margin-left: 50px;
   }
@@ -316,8 +321,12 @@
   }
 
   .u-section-2 .u-list-1 {
-    width: 940px;
-    margin-left: 50px;
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+  .u-section-2 .u-repeater-1 {
+    grid-template-columns: repeat(undefined, NaN%);
   }
 }
 
@@ -327,7 +336,6 @@
   }
 
   .u-section-2 .u-layout-wrap-1 {
-    min-height: 32px;
     width: 720px;
   }
 
@@ -371,8 +379,8 @@
     min-height: 100px;
   }
 
-  .u-section-2 .u-list-1 {
-    width: 720px;
+  .u-section-2 .u-repeater-1 {
+    grid-template-columns: repeat(1, 100%);
   }
 }
 
@@ -407,10 +415,6 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-
-  .u-section-2 .u-list-1 {
-    width: 540px;
-  }
 }
 
 @media (max-width: 575px) {
@@ -419,7 +423,6 @@
   }
 
   .u-section-2 .u-layout-wrap-1 {
-    min-height: 357px;
     margin-right: initial;
     margin-left: initial;
     width: auto;
@@ -454,9 +457,10 @@
   }
 
   .u-section-2 .u-list-1 {
-    width: 340px;
     margin-top: -176px;
     margin-bottom: 60px;
+    margin-right: initial;
+    margin-left: initial;
   }
 }.neon {
   color: #fea7df;
